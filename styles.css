@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.bookshelf {
+  width: 45%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.bookshelf h2 {
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li span {
+  flex: 1;
+}
+
+.editBtn,
+.completeBtn,
+.undoBtn {
+  padding: 5px 10px;
+  margin-right: 5px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.editBtn:hover,
+.completeBtn:hover,
+.undoBtn:hover {
+  background-color: #218838;
+}
+
+.deleteBtn {
+  padding: 8px 10px;
+  margin: 10px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deleteBtn:hover {
+  background-color: #c82333;
+}
+
+.form-container {
+  width: 45%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.form-container h2 {
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="checkbox"],
+button {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="checkbox"] {
+  margin-top: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#searchInput {
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bookshelf,
+  .form-container {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
